@@ -1,0 +1,119 @@
+.header {
+    background-color: #282c34; 
+    color: white;
+    padding: 20px 0;
+    height: 10vh;
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-h1{
+    color: #fff;
+}
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #61dafb; /* Цвет при наведении */
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #444; /* Цвет кнопки входа */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .btn-primary {
+    background-color: #61dafb; /* Цвет кнопки регистрации */
+}
+
+.auth-buttons .btn:hover {
+    background-color: #555; /* Цвет кнопки входа при наведении */
+}
+
+.auth-buttons .btn-primary:hover {
+    background-color: #21a1f1; /* Цвет кнопки регистрации при наведении */
+}
+
+@media all and (max-width: 1024px){
+    .auth-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .auth-buttons .btn {
+        width: 45%;
+        margin-left: 0;;
+    }
+
+    .header{
+        height: 40%;
+    }
+
+    .nav-menu{
+        width: 100%;
+    }
+
+    .auth-buttons{
+        width: 100%;
+    }
+
+    .nav-menu ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
